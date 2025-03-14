@@ -1,0 +1,176 @@
+<footer>
+    <p>date modifified: 2025-10-23</p>
+    <section class="footer-section">
+
+
+
+    <div class="footer-container">
+    <h1>Government Of Canada</h1>
+    
+     <div class="list-class">
+        <ul>
+          <li><a href="">All contact details</a></li>  
+          <li><a href="">Ministries and agencies</a></li>  
+          <li><a href="">About the government</a></li> 
+        </ul>
+     
+     
+     <div class="footer-rule"></div>
+    
+    
+     <div class="list-class">
+        <ul>
+          <li><a href="#">Jobs</a></li>  
+          <li><a href="#">Immigration and Citizenships</a></li>  
+          <li><a href="#">Travel and Tourism</a></li> 
+          <li><a href="#">Companies</a></li>  
+          <li><a href="#">Services</a></li>  
+          <li><a href="#">Health</a></li> 
+          <li><a href="#">taxes</a></li>  
+          <li><a href="#">Environment and natural resources</a></li>  
+          <li><a href="#">National security and defense</a></li> 
+          <li><a href="#">culture</a></li>  
+          <li><a href="#">Police, justice and emergency services</a></li>  
+          <li><a href="#">Transport and Instrastructure </a></li> 
+          <li><a href="#">Canada and the world  </a></li> 
+          <li><a href="#">Money and Finances  </a></li> 
+          <li><a href="#">Science and innovation </a></li> 
+          <li><a href="#">Natives </a></li> 
+          <li><a href="#">veterans and military </a></li> 
+          <li><a href="#">Youth </a></li> 
+        </ul>
+     </div>
+
+    </section>  
+    
+    
+    </div>
+    
+     <div class="footer-below">
+   <div class="second-list">
+        <ul>
+          <li><a href="">Social media</a></li>  
+          <li><a href="">Mobile Application</a></li>  
+          <li><a href="">About Canada.ca</a></li> 
+          <li><a href="">Notice</a></li> 
+          <li><a href="">Confidentiality</a></li> 
+        </ul>
+     </div>
+
+    <div class="footer-below"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" width="90px" height="auto"></div>
+
+
+    </div>
+    
+    
+    </main>
+    
+    
+    
+    </footer>
+
+
+
+
+
+
+
+
+    <!--- laptop foter -->
+    
+
+ <footer class="second-footer">
+
+    <main class="laptop-footer">
+      
+        <section class="laptop-section">
+    
+    
+    
+        <div class="laptop-foot">
+        <h1>Government Of Canada</h1>
+        
+        <div class="laptop-class">
+            <ul>
+              <li><a href="">All contact details</a></li>
+            
+              <br>
+               <li><a href="">Ministries and agencies</a></li>  
+              <li><a href="">About the government</a></li> 
+              <li><a href="">Tourism</a></li> 
+              <li><a href="">Business</a></li> 
+              <li><a href="">Benefits</a></li> 
+              <li><a href="">Culture, history and sport</a></li> 
+            </ul>
+         </div>
+         
+       
+
+
+
+
+
+         <div class="laptop-class">
+            <ul>
+              <li><a href="">Department Agciens</a></li> 
+                
+              <br>
+              <li><a href="">Tax</a></li>  
+              <li><a href="">Environment and natural resources</a></li> 
+              <li><a href="">National security and defence</a></li> 
+              <li><a href="">Culture, history and sport</a></li> 
+              <li><a href="">Policing, justice and emergencies</a></li> 
+              <li><a href="">Transport and infrastructure</a></li> 
+            </ul>
+         </div>
+
+
+         <div class="laptop-class">
+            <ul>
+              <li><a href="">About government</a></li> 
+                
+              <br>
+              <li><a href="">Canada and the world</a></li>  
+              <li><a href="">Money and finances</a></li> 
+              <li><a href="">Science and innovation</a></li> 
+              <li><a href="">Indigenous Peoples</a></li> 
+              <li><a href="">Veterans and military</a></li> 
+              <li><a href="">Youth</a></li> 
+            </ul>
+         </div>
+
+         <div class="clearfix"></div>
+        
+
+        
+         
+         
+        </div>
+         
+        </section>  
+        
+        
+        </main>
+
+
+        <div class="footer-below-2">
+            <div class="second-list-2">
+                 <ul>
+                   <li><a href="">Social media</a></li>  
+                   <li><a href="">Mobile Application</a></li>  
+                   <li><a href="">About Canada.ca</a></li> 
+                   <li><a href="">Notice</a></li> 
+                   <li><a href="">Confidentiality</a></li> 
+                 </ul>
+              </div>
+         
+             <div class="footer-image-2"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" width="90px" height="auto"></div>
+         
+         
+             </div>
+             
+             </footer>
+             
+             
+             
+             
