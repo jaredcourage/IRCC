@@ -1,0 +1,3553 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  body {
+    height: 100vh;
+    background-color: white;
+    
+    background-size: cover;
+    background-position: cover;
+  }
+  
+  
+  
+  /*   THE UP BOX */
+  
+  .up-box {
+    background-color: white;
+    padding: 13px 0px;
+  }
+  
+  .up {
+    float: left;
+     width: 20%;
+     margin-left: 12px;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  .up a {
+    color: white;
+    text-align: center;
+    text-decoration: double;
+  }
+  
+  
+  header {
+    background-color: white;
+  }
+  
+  /* the cally */
+
+
+
+
+   
+  /* .up button{
+    width: 30%;
+    padding: 5px 0;
+ 
+    background-color: blue;
+    color: white;
+    transition: color 0,2s ease;
+  }
+  
+  .up button :hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  
+  */
+  
+  
+  
+  
+  /* General styles */
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .links {
+    display: none;
+    gap: 10px;
+
+    
+  }
+
+
+  
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: white;
+  }
+  
+  .nav-bar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Vertically center the elements */
+  }
+  
+  .nav-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 2rem;
+    text-decoration: none;
+  }
+  
+  .nav-bar .toggle_btn {
+    
+    display: block;
+    
+  }
+
+  
+  .rule-div {
+    border-top: 2px solid #26374a;
+    width: 100vw; /* Ensures full width across all screen sizes */
+    margin-bottom: -12px;
+    position: relative;
+    left: 0;
+     margin-inline-start: -32px;
+  }
+
+
+  .nav-bar .toggle_btn a {
+  
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #26374a;
+    color: white;
+    border: 3px solid #26374a ;
+    padding: 5px 8px;
+  }
+  
+  .action_btn {
+    background-color: orange;
+    color: white;
+    padding: o.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .action_btn:hover {
+    scale: 1.0s;
+    color: white;
+  }
+  
+  .action_btn:active {
+    scale: 0.95;
+  }
+  
+  
+  
+  /*  dropdown menu */
+  
+  .dropdown_menu {
+  position: absolute;
+  height: 0vh;
+  left: 2rem;
+  top: 60px;
+  width: 600px;
+  background-color: #444;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  justify-content: left;
+  align-items: left;
+
+}
+
+  
+  
+  
+  .dropdown_menu.open{
+    height: 630px;
+  }
+  
+  .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  .dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+.sign-in-btn {
+    background-color: #26374a;
+    color: white;
+    border: 3px solid #26374a;
+    text-align: center;
+    padding: 5px 8px;
+}
+
+
+/*the drop down */
+
+.dropdown-item {
+    position: relative;
+  }
+
+
+
+  .dropdown-item a {
+    display: block;
+    padding: 8px 0px ;
+    background-color: #444;
+    color: white;
+   font-size: 18px;
+    text-decoration: underline;
+    width: 60%;
+    text-decoration: none;
+  }
+
+  .submenu li {
+   margin-top: -22px;
+   margin-bottom: -22px;
+   text-align: left;
+   
+  }
+
+
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    color: white;
+    min-width: 150px;
+  }
+
+
+  
+
+  .dropdown-item:hover .submenu  {
+    display: contents;
+    text-align: center;
+  }
+
+
+
+  /* Style for submenu links */
+.submenu li a {
+    
+   
+  }
+  
+  .submenu li a:hover {
+ background-color: white;
+ color: #444;
+  }
+
+
+
+.spe a {
+  background-color: red;
+}
+
+
+  
+    /*  the section close to the menu list*/
+    
+
+.section-div {
+  background-color: #26374a;
+  margin-top: -10px;
+}
+
+.section-div p {
+  font-size: 20px;
+  color: white;
+}
+
+.canada-div {
+  padding: 40px 10px;
+ 
+}
+
+.canada-div h2 {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+.red-rule {
+ border: 3px solid rgb(141, 53, 53);
+ width: 15%;
+ margin: 10px 0;
+}
+
+
+
+    /* the request section */
+
+    .second-request {
+      background-color: whitesmoke;
+      padding: 20px 0;
+       padding-left: 15px;
+
+    }
+
+    .request ul {
+      
+  
+    }
+
+    .request a {
+      color: #26374a;
+      font-size: 18px;
+      text-decoration: underline;
+      padding-left: 9px;
+    }
+
+    .request a:hover {
+      color: blue;
+    }
+
+
+  
+    .request a:visited {
+      color: purple;
+    }
+
+    .request li {
+      list-style: disc;
+      margin: 15px 0;
+      margin-left: 25px;
+    }
+
+
+   
+
+    .request-div h1 {
+      color: black;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 19px;
+      padding-left: 9px;
+    }
+
+
+
+     /* the request section / 222 */
+
+    .second-request-2 {
+      background-color: whitesmoke;
+      padding: 20px 0;
+     
+
+    }
+
+    .request-2 ul {
+      list-style: none;
+  
+    }
+
+    .request-2 a {
+      color: #26374a;
+      font-size: 18px;
+      text-decoration: underline;
+      padding-left: 9px;
+    }
+
+    .request-2 a:hover {
+      color: blue;
+    }
+
+
+  
+    .request-2 a:visited {
+      color: purple;
+    }
+
+    .request-2 li {
+      list-style: none;
+      margin: 15px 0;
+    }
+
+    .request-div-2 h1 {
+      color: black;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 19px;
+      padding-left: 9px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*another 0ne */
+
+
+  .another-sector {
+    background-color: white;
+    border: 5px solid white;
+    padding-left: 15px;
+  }
+ 
+  .another-div  {
+    padding: 30px 0px ;
+  }
+
+
+  .a-b a {
+  font-family: 'Noto Sans', sans-serif;
+  color: #26374a;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+   transition: color, blue ease-out;
+   
+  }
+
+  .a-b a:hover {
+    color: blue;
+  }
+
+
+
+
+  .another-button button {
+  font-family: 'Noto Sans', sans-serif;
+  color: rgb(59, 58, 58);
+  font-size: 16px;
+  border: 2.5px solid #26374a;
+  background-color: white;
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: underline;
+ 
+  }
+
+  .a-b p {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(59, 58, 58);
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    }
+
+  .a-b {
+    margin: 28px 0;
+  }
+
+
+
+
+
+
+  
+
+
+  /* the index fetures list  */
+
+
+  .features-section {
+    margin-top: -5px;
+   }
+ 
+   .features-section h2 {
+     margin-bottom: 10px;
+     padding-left: 9px;
+     margin-top: 15px;
+   }
+ 
+   .features-div {
+    
+    justify-content: space-around;
+    background-color: whitesmoke;
+    border: 20px solid white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    background: whitesmoke;
+    box-shadow: 0px 0px 15px 5px whitesmoke(0, 0, 0, 1);
+   }
+ 
+   .features-div img {
+     width: 98%;
+     height: 28vh;
+     align-items: center;
+     padding-left: 9px;
+     margin-bottom: 30px;
+   }
+ 
+   .features-section h2 {
+     color: rgb(35, 33, 33);
+    font-size: 18px;
+    padding-left: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+   }
+ 
+   .features-section a {
+     color:  #26374a;
+    font-size: 18px;
+    padding-left: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+  
+   }
+ 
+ 
+   .features-section a:hover {
+    
+    color: blue;
+  
+   }
+ 
+   .features-section a:active {
+    
+     color: purple;
+   
+    }
+ 
+ 
+ 
+   .features-section p {
+     margin-top: 6px;
+     color:  rgb(77, 75, 75);
+    font-size: 18px;
+    padding-left: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+    
+   }
+
+
+
+
+
+
+
+
+
+   /* the index fetures list 2 laptop  */
+
+
+  .features-section-2 {
+    margin-top: -5px;
+   }
+
+   .feature-22 {
+    margin-left: 100px;
+   }
+ 
+   .features-section-2 h2 {
+     margin-bottom: 5px;
+     padding-top: 20px;
+     margin-left: 20px;
+   }
+ 
+   .laptop-div {
+    
+    justify-content: space-around;
+    background-color: whitesmoke;
+    border: 20px solid white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 40%;
+    background: whitesmoke;
+    box-shadow: 0px 0px 15px 5px whitesmoke(0, 0, 0, 1);
+   }
+ 
+   .laptop-div img {
+     width: 100%;
+     height: 28vh;
+     align-items: center;
+     padding-right: 9px;
+     margin-bottom: 30px;
+   }
+
+   .lspp {
+    display: flex;
+   }
+ 
+   .laptop-div h2 {
+
+     color: rgb(35, 33, 33);
+    font-size: 18px;
+    padding-right: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+   }
+ 
+   .laptop-div a {
+     color:  #26374a;
+    font-size: 18px;
+    padding-right: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+  
+   }
+ 
+ 
+   .laptop-div a:hover {
+    
+    color: blue;
+  
+   }
+ 
+   .features-section a:active {
+    
+     color: purple;
+   
+    }
+ 
+ 
+ 
+   .features-section p {
+     margin-top: 6px;
+     color:  rgb(77, 75, 75);
+    font-size: 18px;
+    padding-left: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+    
+   }
+
+
+
+
+
+
+
+
+
+
+  /* hero */
+  
+  section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+   
+  }
+  
+  
+  
+  .all {
+   background-color: lightgray;
+    
+  }
+  
+  #hero h1 {
+    margin-top: 60px;
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   color: teal;
+  }
+  
+  #hero p {
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+   
+   }
+  
+  
+  #hero img {
+    height: 100vh;
+    width: 100% ;
+   
+  
+  }
+  
+
+
+
+  /* the language button */
+   
+  .language {
+    position: absolute;
+  }
+
+  .language a {
+    color: black;
+    text-decoration: none;
+    
+   
+  }
+
+  .language a.active {
+    color:  #26374a;
+  }
+  .content {
+    margin: 0 0 ;
+  }
+
+  .language-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .language-toggle:hover {
+    background-color: #0056b3;
+  }
+
+
+  /* Search Results */
+
+  .search-container {
+    display: flex;
+    width: 90%;
+    margin-left: 10px;
+     
+}
+
+.search-container input {
+    flex: 1;  /* Take up available space */
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 2px solid #26374a;
+    border-right: none;  /* Remove border between input and button */
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 50%;
+    outline: none;
+}
+
+
+.search-container button {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #26374a;  /* Button color */
+    border: 2px solid #26374a;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;  /* Rounded right corners */
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* phone own*/
+
+footer {
+    margin-top: 100px;
+}
+
+.footer-section {
+  
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 99vh;
+    background: #1b3758;
+    gap: 20px;
+   
+}
+
+
+
+
+.list-class a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 10px; /* Adds padding inside each link */
+    display: inline-block; 
+}
+
+.list-class li  {
+   list-style: none;
+     
+}
+
+.list-class ul li a {
+   
+}
+
+.list-class {
+    display: flex; /* or grid */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between list items */
+}
+
+.footer-rule {
+    border: 2px solid white;
+    width: 12%;
+    margin-left: 11px;
+    margin-bottom: 25px;
+   
+}
+
+
+
+
+footer p {
+    margin: 20px 0 ;
+    padding-left: 15px;
+    color: rgb(68, 65, 65);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.footer-container h1 {
+    padding-top: 15px;
+    padding-left: 9px;
+    font-size: 19px;
+}
+
+
+.footer-below {
+    display: flex;
+    justify-content: space-between; /* Aligns the content on both ends */
+    align-items: center; /* Centers the items vertically */
+    padding: 20px;
+  }
+  
+
+
+.second-list a {
+color: #393f45;
+font-size: 15px;
+padding: 5px 10px; /* Adds padding inside each link */
+ display: inline-block; 
+
+}
+
+.second-list li:nth-child(2) a, 
+.second-list li:nth-child(3) a {
+    color: rgb(160, 87, 160);
+}
+
+
+.footer-image {
+    display: block;
+   
+  }
+  
+  
+  .footer-image img {
+    min-width: 100px;
+    height: auto;
+    display: right;
+  margin-top: -200px; /* Pushes the image below the list items */
+  
+    
+  }
+  
+
+  /*footer styles for latop  */
+
+
+  .second-footer {
+    margin-top: 100px;
+  }
+
+
+  .laptop-class a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 10px; /* Adds padding inside each link */
+    display: inline-block; 
+  }
+
+
+  .laptop-section {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50vh;
+    background: #1b3758;
+    gap: 20px;
+    margin-top: 210px;
+  }
+
+
+  .laptop-class {
+    float: left;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+  }
+   .clearfix {
+    clear: both;
+   }
+
+   .laptop-foot h1 {
+    padding-top: 50px;
+    margin-left: 100px;
+    color: white;
+    font-size: 19px;
+   }
+
+
+/* for the laptop ending fotter*/
+
+   .second-list-2 a {
+    color: #393f45;
+    font-size: 15px;
+    padding: 5px 10px; /* Adds padding inside each link */
+    display: inline-block;
+}
+
+.second-list-2 li:nth-child(2) a, 
+.second-list-2 li:nth-child(3) a {
+    color: rgb(160, 87, 160);
+}
+
+.footer-below-2 {
+    display: flex;
+    justify-content: space-between; /* Ensures the list and image are spaced out */
+    align-items: center; /* Vertically aligns the list and image in the middle */
+    gap: 20px; /* Adds some space between the list and the image */
+    padding: 20px;
+}
+
+.second-list-2 ul {
+    display: flex;
+}
+
+.footer-image-2 {
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+}
+
+.footer-image-2 img {
+    min-width: 90px; /* Sets a minimum width for the image */
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+/*the job page file*/
+
+.job-section h1 {
+  font-size: 28px;
+  color: #26374a;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.ancho-link a {
+  color: purple;
+  text-decoration: underline;
+  padding-left: 30px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.job-section {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.red-rule-3 {
+  border: 3px solid rgb(141, 53, 53);
+  width: 15%;
+  margin: 10px 0;
+  margin-left: 30px;
+ }
+
+ .job-section p {
+  padding-left: 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(66, 64, 64);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* the funding page */
+
+ .funding-section {
+  margin-top: 15px;
+ }
+
+ .funding-a a  {
+  color: #26374a;
+  padding-left: 3px;
+  text-decoration: underline;
+  margin-right: 30px; /* Adjust the space as needed */
+  font-size: 17px;
+ }
+
+ .funding-a {
+  margin-top: 15px;
+  margin-bottom: 10px; /* Adjust the space as needed */
+}
+
+ .funding-a i {
+  margin-left: 26px;
+ }
+
+
+ /*the funding page second secton */
+.find h1 {
+color: rgb(83, 80, 80);
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+padding-left: 25px;
+margin-top: 50px;
+}
+
+.find h2 {
+  color:black;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 25px;
+ 
+  }
+
+  .find p {
+    color:rgb(86, 82, 82);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    margin-top: 20px;
+   
+    }
+
+    .mail-border {
+      padding-left: 13px;
+      margin-top: 50px;
+      
+    }
+
+  .mail-border a {
+    background-color:#537191 ;
+    border: 3px solid #537191;
+    color: white;
+    width: 200%;
+    padding: 20px 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    
+  }
+
+/*the search button of the funding page */
+
+.funding-search {
+  margin-top: 50px;
+  padding-left: 28px;
+}
+
+.funding-search h3 {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(65, 61, 61);
+  font-size: 19px;
+}
+
+.div-me input {
+  width: 70%;
+  border: 1px solid rgb(243, 235, 235);
+  background-color: white;
+  border-radius: 5px 5px;
+  padding: 12px 0;
+  text-align: left;
+  outline: none;
+
+}
+
+.search-container-3 button {
+   
+}
+
+.div-me button {
+  width: 20%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid  #26374a;
+  color: white;
+  background-color: #26374a;
+}
+
+.fit {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1758a1;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+
+.fit-2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 23px;
+  margin: 15px 0;
+}
+
+
+
+.filter-header .toggle-btn-1 {
+ 
+  background: none;
+  border: none; /* Hides the border */
+  cursor: pointer;
+  border-radius: 50%; /* Makes it circular */
+  transition: background 0.3s ease;
+  width: 30px; /* Controls button size */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+@media (max-width: 600px) {
+  .filter-header {
+      width: 100%; /* Ensure full width */
+      padding: 5px 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.filter-header .toggle-btn-1:hover {
+  background: rgb(242, 239, 239); 
+  
+}
+
+.filter-header {
+  border-top: 0.5px dashed #537191;
+  border-bottom: 0.5px dashed #537191;
+  width: 88%;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Ensure both elements stay inline */
+  align-items: center; /* Keep them vertically aligned */
+  height: 40px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  transition: all 0.2s ease;
+  flex-wrap: nowrap;
+}
+
+
+
+.filter-options {
+  display: none;
+  padding: 10px;
+}
+
+
+
+.filter-header span {
+  .filter-header span {
+    text-decoration: underline;
+    color: #26374a;
+    font-size: 1em;
+    letter-spacing: -0.3px;
+    flex-grow: 1; /* Ensures text takes up available space */
+    text-align: left; /* Align text to left */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+}
+
+
+
+
+
+
+
+
+.filter-header span button {
+  display: inline;
+  
+}
+
+
+
+
+
+.filter-options label input {
+ 
+  font-size: 17px;
+  color: rgb(156, 147, 147);
+  display: inline;
+  flex-direction: row;
+  
+   margin: 10px 0;
+}
+
+.filter-options label  {
+  color: rgb(61, 56, 56);
+  display: block;
+}
+
+.joining{
+  margin-left: 30px;
+}
+
+
+
+#results {
+  border: 2px solid black;
+  justify-content: space-between;
+}
+
+.resu-ty h1 {
+  margin-top: 20px;
+  color: rgb(52, 50, 50);
+  font-size: 25px;
+  margin-left: 40px;
+}
+
+
+
+
+
+
+/* funding-grants codes*/
+
+/* Ensure full responsiveness */
+.funding-grants {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  padding-left: 20px;
+}
+
+.grants h2 {
+  margin-left: 20px;
+  font-size: 17px;
+  color: rgb(94, 90, 90);
+  font-family: sans-serif;
+}
+
+
+
+/* Style the ordered list */
+.custom-list {
+  padding-left: 50px; /* Adds spacing for bullets */
+  margin-top: 20px;
+}
+
+/* Style list items */
+.custom-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  margin-left: 40px;
+  list-style-type: disc; 
+}
+
+/* Style anchor links */
+.custom-list li a {
+  text-decoration: underline;
+ color: #26374a;
+  font-size: 20px;
+  transition: color 0.3s ease;
+
+}
+
+
+.funding-grants h1 {
+  color: rgb(54, 50, 50);
+  margin-left: 20px;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+
+
+
+
+/* the feedback*/
+
+
+
+.feedback-container {
+  border: 1px solid #537191;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Buttons */
+.feedback-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.feedback-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+  font-size: 1em;
+}
+
+.feedback-button.yes {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.feedback-button.no {
+  background-color: #FF5733;
+  color: white;
+}
+
+.feedback-button:hover {
+  opacity: 0.8;
+}
+
+/* Feedback message (hidden by default) */
+.feedback-container {
+  border: 1px solid #537191;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Buttons */
+.feedback-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.feedback-button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+  font-size: 1em;
+}
+
+.feedback-button.yes {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.feedback-button.no {
+  background-color: #FF5733;
+  color: white;
+}
+
+.feedback-button:hover {
+  opacity: 0.8;
+}
+
+/* Feedback message (hidden by default) */
+.feedback-message {
+  display: none; /* Hidden by default */
+  border: 1px solid #4CAF50;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Green check icon */
+
+        /* Main Section Border */
+        .section-border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: -10px;
+            margin-right: 220px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        /* Social Icons Container */
+        .social-border {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Spacing between icons */
+            padding: 10px 15px;
+            border: 2px solid #ccc; /* Gray border */
+            border-radius: 8px; /* Rounded corners */
+            background-color: whitesmoke; /* Light gray background */
+           
+        }
+
+        /* Styling for text */
+        .follow p {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        /* SVG Icon Styling */
+        .follow a svg {
+            width: 32px;
+            height: 32px;
+            transition: transform 0.2s ease;
+        }
+
+        .follow a svg:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+
+
+
+        .another-sector span {
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+           position: relative;
+           top: 20px;
+        }
+
+
+
+/* the busines page styles */
+
+.space {
+  padding-top: 20px;
+}
+
+.congo {
+  padding-top: 20px;
+}
+
+.congo  a {
+  color: blueviolet;
+  display: inline;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 9px;
+  position: relative;
+  bottom: 8px;
+}
+
+.congo a:hover {
+ text-decoration: underline;
+}
+
+.socisl-class9 {
+  margin-left: 20px;
+   margin-bottom: 50px;
+}
+
+.social-container i a  {
+ 
+}
+
+
+.social-container h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Social Buttons */
+#fab {
+  border-radius: 5px 5px 5px 5px ;
+ font-size: 40px;
+
+}
+
+/* Hover Effects */
+
+
+/* Individual Button Colors */
+
+
+
+
+/* the immigration and citzenship  codes  */
+
+
+
+/*the job page file*/
+
+.Immigration-section h1 {
+  font-size: 28px;
+  color: #26374a;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.ancho-link a {
+  color: purple;
+  text-decoration: underline;
+  padding-left: 30px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Immigration-section {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.red-rule-3 {
+  border: 3px solid rgb(141, 53, 53);
+  width: 15%;
+  margin: 10px 0;
+  margin-left: 30px;
+ }
+
+ .Immigration-section p {
+  padding-left: 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(66, 64, 64);
+ }
+
+ .text-bot {
+  background-color: #26374a;
+  padding: 30px 0px;
+  position: relative;
+  bottom: 40px;
+
+ }
+
+
+
+
+/* the index fetures list  */
+
+
+.features-section {
+  margin-top: -5px;
+ }
+
+ /*.immigration h2 {
+   margin-bottom: 10px;
+   padding-left: 9px;
+   margin-top: 15px;
+ }
+*/
+
+
+ .immigration-div {
+  margin-top: 30px;
+  justify-content: space-around;
+  background-color: white;
+  border: 20px solid white;
+  padding-top: -10px;
+  padding-left: -5px;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 15px 5px whitesmoke(0, 0, 0, 1);
+ }
+
+ .immigration-div img {
+   width: 98%;
+   height: 28vh;
+   align-items: center;
+   padding-left: 9px;
+   margin-bottom: 30px;
+ }
+
+ .features-section h2 {
+   color: rgb(35, 33, 33);
+  font-size: 18px;
+  padding-left: 9px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+ .immigration-div a {
+   color:  white;
+  font-size: 18px;
+  padding-left: -80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+
+  
+ }
+
+
+ .immigration-div a:hover {
+  
+  color: blue;
+
+ }
+
+ .features-section a:active {
+  
+   color: purple;
+ 
+  }
+
+
+
+ .immigration-div p {
+   margin-top: 6px;
+   color:  rgb(77, 75, 75);
+  font-size: 18px;
+  padding-left: 9px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  
+ }
+
+
+
+
+
+.immigration-request {
+  background-color:  lightgrey;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.immigration-request i {
+  margin-left: 250px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+.immigration-request-2  li    {
+  list-style: disc;
+  color: #26374a;
+  margin-left: 80px;
+}
+
+
+
+.immigration-request-2 {
+  margin-top: 40px;
+}
+
+
+.immigration-request-2 a {
+ font-size: 19px;
+  color: #26374a;
+  list-style: disc;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.immigration-request-2 a:hover {
+  color: blue;
+   
+ }
+
+ .immigration-request-2 a:visited {
+  color: purple;
+   
+ }
+
+
+
+
+.move-request {
+  margin-top: -16px;
+}
+
+.immigration-request-2 ul li  {
+  padding: 5px 0 ;
+}
+
+.immigration-request ul li  {
+  padding: 5px 0 ;
+}
+
+
+/* the second request list */
+
+
+.immigration-request-r {
+  background-color:  whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 7px;
+
+}
+
+.immigration-request-r h1 {
+  margin-left: 80px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #26374a;
+
+  }
+
+.immigration-request-3 li    {
+  list-style: disc;
+  color: #26374a;
+  margin-left: 80px;
+}
+
+.immigration-request-3 ul li  {
+  padding: 5px 0 ;
+}
+
+.immigration-request-r ul li  {
+  padding: 5px 0 ;
+}
+
+
+
+
+
+.immigration-request-3 {
+  margin-top: 40px;
+}
+
+
+.immigration-request-r a {
+ font-size: 19px;
+  color: #26374a;
+  list-style: disc;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+   transition: color,blue ease-out;
+}
+.immigration-request-r a:hover {
+  color: blue;
+   
+ }
+
+ .immigration-request-r a:visited {
+  color: purple;
+   
+ }
+
+
+
+
+.move-request-2 {
+  margin-top: -16px;
+}
+
+
+
+
+
+
+/* application*/
+
+
+
+
+.application-steps {
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.step {
+  border-bottom: 1px solid #ccc;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.step-header:hover {
+  background-color: white;
+  border-bottom: 2px solid #26374a ;
+
+}
+
+.step-header i {
+  transition: transform 0.3s;
+  
+}
+
+.step-content {
+  display: none;
+  padding: 0 15px 15px;
+}
+
+.step-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.step-content ul li {
+  margin: 5px 0;
+}
+
+.step-content ul li a {
+  text-decoration: none;
+  
+}
+
+.step-content ul li a:hover {
+ 
+}
+
+
+.step-header a {
+  color: rgb(137, 106, 165);
+  font-size: 21px;
+  text-align: left;
+
+}
+
+.step-header a:hover {
+
+
+}
+.step-header i:hover {
+  color: blue;
+  cursor: pointer;
+  
+}
+
+.number-3 h1 {
+  color: rgb(69, 67, 67);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*the citizen page for form */
+
+.step-far {
+  
+}
+
+
+.step-head {
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 60;
+  margin-inline: -5px;
+  
+
+}
+
+.step-head i {
+  transition: transform 0.3s;
+  position: relative;
+  bottom: 59px;
+  left: 100px
+   
+}
+
+.step-head:hover {
+
+
+}
+
+
+.step-content-head {
+  display: none;
+  padding: 0 15px 15px;
+}
+
+
+.step-head a {
+  color: #26374a;
+  font-size: 20px;
+  text-align: left;
+  display: inline;
+  text-decoration: none;
+  
+ 
+}
+
+.step-head a:hover {
+ 
+  text-decoration: underline;
+  
+ 
+}
+
+.step-content-head {
+  display: none;
+  padding: 0 15px 15px;
+  border: 1px solid #26374a ;
+  padding: 30px 30px;
+  margin-top: -50px;
+  line-height: 1.9rem;
+}
+
+.step-content-head ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.step-content-head ul li {
+  margin: 5px 0;
+}
+
+.step-content-head ul li a {
+  text-decoration: none;
+  
+}
+
+.cork-btn button {
+  background-color: #26374a;
+  border: 1px solid #26374a;
+  width: 50%;
+  padding: 10px 0 ;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.step-content-head ol {
+   color: rgb(67, 64, 64);
+}
+
+
+
+
+/*the country codes styles */
+
+.country-container {
+  
+}
+
+.country-container select {
+   width: 80%;
+   padding: 15px 0;
+   border: 0.5px solid gainsboro ;
+   font-size: 18px;
+   color: rgb(91, 89, 89);
+   outline: auto;
+
+}
+
+
+.country-container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: gainsboro ;
+  color: blue;
+  
+  border: 1px solid gainsboro ;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+
+.country-container button:hover {
+  background-color: gainsboro ;
+}
+
+#countryInfo {
+  
+}
+
+
+
+/*the best part of travel advice */
+
+.tarvel-advice-section {
+  margin-left: 25px;
+}
+
+
+/*the h1 services code */
+
+
+.work-h1 {
+  font-size: 25px;
+  margin-left: 10px;
+
+}
+
+/*the dociments codes*/
+
+.us-border {
+  border-left: 1px solid red;
+  width: 300%;
+  margin-left: 90px;
+}
+
+
+
+
+/*THE MEDIA LIST CODES*/
+
+
+.media-second li {
+   list-style-type: disc;
+   margin: 35px 0 ;
+   margin-left: 50px;
+}
+
+.media-second a {
+ color:  #26374a;
+ font-size: 25px;
+ text-decoration: underline;
+ margin: 30px 0;
+}
+
+.media-list {
+  margin-left: 40px;
+}
+
+
+.media-name {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+/*the boiling part*/
+
+.section-travel {
+  
+}
+
+.us-border {
+
+  height: 10%;
+  background-color: red;
+  width: 20%;
+   border-top: 1px solid red;
+}
+
+
+/* the time code */
+
+/*.timeline {
+  position: relative;
+  width: 100px;
+  margin: 20px auto;
+}*/
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 40px; /* Adjusted width */
+}
+
+
+/* Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+/* Circles */
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin: 30px auto;
+}
+
+/*
+
+<div class="timeline">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+*/
+
+
+/*the green checker icon*/
+
+
+.checkers .check-icon {
+  color: rgb(18, 92, 18);
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.checkers ul {
+  list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.checkers li {
+  font-size: 21px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: rgb(68, 64, 64);
+}
+
+.checkers {
+  margin-left: 35px;
+}
+
+
+
+.section-devide {
+
+  align-items: flex-start;  /* Align items at the top */
+  gap: 0px;  /* Space between the timeline and text */
+  margin: 0 0;
+  margin-left: 30px;
+}
+
+
+/* Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #26374a;
+  transform: translateX(-50%);
+}
+
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 4px solid #26374a;
+  border-radius: 50%;
+  position: relative;
+  margin: 44px 0;
+}
+
+
+/* Text Content Styling */
+.section-text {
+
+}
+
+/* Make links bold */
+.section-text a {
+  font-size: 20px;
+  display: block;
+  color: #26374a;
+  text-decoration: underline;
+  
+}
+
+.section-text p {
+  margin-top: 5px;
+}
+
+
+
+
+
+.section-text a:last-child {
+  margin-top: 46px;
+  
+}
+
+
+
+
+
+
+.chin-section h1 {
+  color: rgb(67, 66, 66);
+  margin-left: 36px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+
+
+
+
+.jared {
+  float: left;
+  margin: 40px 0px;
+}
+
+
+
+/*the feature list , below list styles */
+.list-video li  {
+ list-style: disc;
+ margin-left: 50px;
+ margin-top: 15px;
+}
+
+.list-video a {
+  margin: 20px 0;
+}
+
+
+
+
+.btn-9 a {
+  display: block;
+  width: 50%;
+  background-color: gainsboro;
+  color: BLACK ;
+  padding: 10PX 0 ;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*  websites general   responsivness*/
+
+@media (max-width: 992px) {
+    .navbar .links,
+    .nav-bar .action_btn {
+      display: none;
+    }
+  
+    .nav-bar .toggle_btn {
+      display: block;
+      
+    }
+  
+    .dropdown_menu {
+      display: block;
+    }
+
+    
+
+    
+    }
+  
+  
+  
+  
+  
+  
+   
+  
+  
+  
+    
+   
+  
+  @media (min-width: 700px) {
+
+
+
+
+
+
+
+
+
+    /*funding section*/
+
+
+    .funding-grants {
+      margin-left: 67px;
+    }
+
+    .chin-section h1 {
+      color: black;
+      margin-left: 106px;
+    }
+
+
+    .section-devide {
+
+    
+      margin-left: 90px;
+
+    }
+
+
+
+    .section-text a {
+      font-size: 25px;
+      
+      
+    }
+    
+    .section-text p {
+      margin-top: 5px;
+    }
+    
+    
+    /*the checkers code */
+
+    .checkers {
+      margin-left: 107px;
+    }
+
+/*the h1 services code */
+
+
+.work-h1 {
+  
+  margin-left: 107px;
+
+}
+
+
+/*the menu list */
+
+.country-container button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: gainsboro ;
+  color: blue;
+  
+  border: 1px solid gainsboro ;
+  cursor: pointer;
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 40px;
+  left: 290px;
+}
+
+
+
+
+.country-container select {
+  width: 110%;
+  padding: 10px 0;
+   border: 0.5px solid gainsboro ;
+   font-size: 18px;
+   color: rgb(91, 89, 89);
+   outline: auto;
+  margin-left: 20px;
+}
+
+
+
+
+    .step-head i {
+     
+      left: 420px
+       
+    }
+
+/*the work foredin workers*/
+
+.work-h1 h1 {
+  margin-left: 300px;
+}
+
+
+/*the application*/
+
+
+
+
+
+
+    
+
+/*the ist  one of the immigraation page request list of countries  */
+    .immigration-request i {
+      margin-left: 120px;
+       
+    }
+
+
+.circle {
+  float: left;
+}
+
+.immigration-request {
+  padding-bottom: 40px;
+
+}
+
+.move-request {
+margin-top: -30px;
+}
+
+.immigration-request {
+  
+}
+
+/*the second one of the immigraation page  */
+
+
+.immigration-request-r h1 {
+  margin-left: 100px;
+  font-size: 18px;
+  position: relative;
+  bottom: 40px;
+   
+}
+
+.immigration-request-3 .circle-2  {
+  margin-left: -80px;
+
+}
+
+ 
+
+
+
+
+
+.circle-2 {
+float: left;
+}
+
+.immigration-request-r {
+padding-bottom: 60px;
+
+}
+
+.move-request-2  {
+margin-top: -30px;
+ position: relative;
+ left: 130px;
+}
+
+
+
+
+
+
+
+/*employment details */
+/* the immigration and citzenship  codes  */
+
+
+
+/*the job page file*/
+
+.Immigration-section h1 {
+ 
+  padding-left: 107px;
+ 
+}
+
+.ancho-link a {
+  color: purple;
+  text-decoration: underline;
+
+}
+
+.Immigration-section {
+  margin-top: 40px;
+
+}
+
+
+.red-rule-3 {
+
+  margin-left: 30px;
+ }
+
+ .Immigration-section p {
+  padding-left: 107px;
+  
+ }
+
+ .text-bot {
+  background-color: #26374a;
+  padding: 10px 0px;
+  position: relative;
+  bottom: 40px;
+  width: 60%;
+ }
+
+ .emlpo {
+display: inline-flex;
+
+}
+
+ 
+
+
+ .immigration-div {
+  margin-top: -30px;
+  justify-content: space-around;
+  background-color: white;
+  border: 20px solid white;
+  padding-top: -10px;
+  padding-left: -5px;
+  width: 60%;
+  background: white;
+  box-shadow: 0px 0px 15px 5px whitesmoke(0, 0, 0, 1);
+  margin-left: 200px;
+ }
+
+ .immigration-div img {
+   width: 60%;
+   height: 28vh;
+   align-items: center;
+   padding-left: 9px;
+   margin-bottom: 30px;
+ }
+
+ .features-section h2 {
+   color: rgb(35, 33, 33);
+  font-size: 18px;
+  padding-left: 9px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+ .immigration-div a {
+   color:  white;
+  font-size: 18px;
+  padding-left: -80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+
+  
+ }
+
+
+ .immigration-div a:hover {
+  
+  color: blue;
+
+ }
+
+ .features-section a:active {
+  
+   color: purple;
+ 
+  }
+
+
+
+ .immigration-div p {
+   margin-top: 6px;
+   color:  rgb(77, 75, 75);
+  font-size: 18px;
+  padding-left: 9px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+
+
+
+
+
+
+/* socila laptop*/
+
+.hide-laptop {
+  display: none;
+}
+
+
+
+/* the index fetures list  */
+
+
+
+
+    /* socila media logo */
+
+.socisl-class9 {
+  margin-left: 100px;
+   margin-bottom: 50px;
+}
+
+
+    /*the funding page second secton */
+.find h1 {
+  color: rgb(83, 80, 80);
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 85px;
+  margin-top: 50px;
+  }
+  
+  .find h2 {
+    color:black;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 85px;
+   
+    }
+  
+    .find p {
+      color:rgb(86, 82, 82);
+      font-size: 23px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 85px;
+      margin-top: 20px;
+     
+      }
+  
+    
+    
+      .mail-border {
+        padding-left: 42px;
+        margin-top: 50px;
+        width: 100%;
+      }
+  
+    .mail-border a {
+      background-color:#537191 ;
+      border: 3px solid #537191;
+      color: white;
+      width: 400%;
+      padding: 20px 0px;
+      font-size: 18px;
+      text-decoration: underline;
+      padding-right: 200px;
+      
+    }
+
+    
+    .section-border {
+      
+      margin-right: 1080px;
+
+  }
+  
+    
+   
+    
+    
+    
+    
+    
+    /* the funding page */
+
+ .funding-section {
+  margin-top: 50px;
+  
+ }
+
+ .funding-div {
+  display: inline-flex;
+ }
+
+ .funding-a a  {
+  color: #26374a;
+  padding-left: 3px;
+  text-decoration: underline;
+  margin-right: 30px; /* Adjust the space as needed */
+  font-size: 18px;
+ }
+
+ .funding-a {
+  margin-top: -2px;
+  margin-bottom: -20px; /* Adjust the space as needed */
+  position: relative;
+  z-index: 999;
+  left: 30px;
+}
+
+ .funding-a i {
+  margin-left: -26px;
+ }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*the job page of the list */
+    
+    .job-section h1 {
+      
+      padding-left: 109px;
+      margin-top: 70px;
+      font-size: 35px;
+    }
+
+    .job-section {
+      border: 10px solid white;
+    }
+
+    .job-section p {
+      padding-left: 109px;
+      font-size: 25px;
+    }
+    
+    .ancho-link a {
+      color: purple;
+      text-decoration: underline;
+      padding-left: 109px;
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .job-section {
+      margin-top: 30px;
+    }
+    
+    
+    .red-rule-3 {
+     
+      margin-left: 109px;
+     }
+
+
+
+     /*the job ending*/
+
+     .another-sector {
+      
+     position: relative;
+     z-index: 999;
+     right: 25px;
+    }
+
+    .another-sector span {
+      
+
+      margin-left: 73px;
+       left: 30px;
+    }
+   
+
+
+
+    .formular {
+      display: inline-flex;
+     margin-left: 100px;
+    }
+
+    .another-button button {
+      margin-left: 100px;
+    }
+
+
+    .formular-2 {
+      display: inline-flex;
+     gap: 50px;
+    }
+
+    .formular-3 {
+      display: inline-flex;
+      
+    }
+
+    .formular-3 li:nth-child(2)
+     { margin-left: 130px; }
+
+   
+  
+     .formular-3 li:nth-child(3)
+     { margin-left: 195px; }
+
+
+     .formular-3 li:nth-child(4)
+     { margin-left: 145px; }
+
+
+    
+
+
+    .formular p:first-child {
+      color: red;
+    }
+
+
+
+
+    /* formulr for section - 22*/
+
+    .request-div-2 h1 {
+      position: relative;
+      z-index: 10px;
+      top: 80px;
+      left: 25px;
+    }
+
+    
+    
+.second-request-2 {
+ margin-left: 100px;
+}
+
+    .formular-2-2 {
+      float: left;
+       margin-inline: 18px;
+       margin-top: 80px;
+    }
+
+.formular-6 {
+  display: inline-flex;
+
+}
+
+.formular-6 img {
+  margin-left: 200px;
+  width: 120%;
+  height: 40vh;
+}
+
+.request-div-2 a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+
+    .formular-3-4 {
+      display: inline-flex;
+      
+    }
+
+    .formular-3-4 {
+      display: inline-flex;
+      
+    }
+
+    .formular-3-4 li:nth-child(2)
+     { margin-left: 12px; }
+
+   
+  
+     .formular-3-4 li:nth-child(3)
+     { margin-left:  12px; }
+
+
+     .formular-3-4 li:nth-child(4)
+     { margin-left:  -5px; }
+
+
+    
+
+
+    .formular p:first-child {
+      color: red;
+    }
+
+
+    /* the end of formular */
+    
+
+  .a-b p {
+    
+  margin-top: 10px;
+   padding-left: 9px;
+  
+    }
+
+    .a-b a {
+    
+   
+       padding-left: 9px;
+      
+        }
+
+
+
+
+        /*the features list laptop codes */
+      
+
+        .main-feature {
+          display: none;
+        }
+
+
+
+        /* the index fetures list  */
+
+
+        
+         
+    
+    
+    
+    
+    /*  the section close to the menu list*/
+  
+.section-div {
+ 
+  margin-top: 10px;
+  background-image: url(https://talentmingleagency.com/wp-content/uploads/2025/02/3dith-fo-768x284.jpg);
+  height: 50vh;
+  background-position:  center;
+  background-size: cover;
+  
+}
+
+
+
+    
+
+
+
+
+.canada-div {
+  pointer-events: none; /* Makes it non-interactive */
+}
+
+
+
+
+
+
+
+
+.laptop-style {
+ margin-left: 120px;
+ padding-top: 100px;
+}
+
+
+.canada-div {
+  background-color: #26374a;
+  padding: 40px 0px;
+  width: 35%;
+  padding-left: 9px;
+  flex-grow: 1; /* Allows it to take up space without overlapping */
+  z-index: 10;
+}
+
+
+
+
+
+
+.red-rule {
+ border: 3px solid rgb(141, 53, 53);
+ width: 15%;
+ margin: 10px 0;
+}
+    
+    
+    
+.second-request {
+  background-color: whitesmoke;
+  padding: 40px 0;
+
+
+}
+
+.request ul {
+  list-style: none;
+
+}
+
+.request a {
+  
+  font-size: 18px;
+  text-decoration: underline;
+  padding-left: 9px;
+}
+
+.request a:hover {
+  color: blue;
+}
+
+
+
+.request a:visited {
+  color: purple;
+}
+
+.request li {
+ 
+  margin: 10px 0;
+  list-style: none;
+}
+
+
+
+
+.request-div h1 {
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 19px;
+  padding-left: 9px;
+} 
+
+.request-div {
+  margin-left: 100px;
+  
+}
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+    
+    #hero img {
+     height: 50vh;
+     width: 100%;
+     margin-top: 50px;
+    
+    }
+
+
+    .search-container {
+        display: flex;
+        width: 30%;
+        margin-left: 700px;
+         
+    }
+
+
+    .search-container input {
+        flex: 1;  /* Take up available space */
+        padding: 5px 10px;
+        font-size: 18px;
+        border: 2px solid #26374a;
+        border-right: none;  /* Remove border between input and button */
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 70%;
+        outline: none;
+    }
+    
+    
+    .search-container button {
+        padding: 5px 10px;
+        font-size: 18px;
+        background-color: #26374a;  /* Button color */
+        border: 2px solid #26374a;
+        color: white;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;  /* Rounded right corners */
+        transition: background-color 0.3s ease;
+    }
+    
+
+    
+    /* phone own*/
+
+.footer-section {
+  
+   display: none;
+   
+}
+
+
+
+
+.list-class a {
+    display: none;
+}
+
+.list-class li  {
+    display: none;
+     
+}
+
+.list-class ul li a {
+   
+}
+
+.list-class {
+    display: none;
+}
+
+.footer-rule {
+    display: none;
+   
+}
+
+
+
+
+
+
+
+footer p {
+  
+margin-bottom: -180px;
+margin-left: 90px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-container h1 {
+    display: none;
+}
+
+
+.footer-below {
+    display: none;
+  }
+  
+
+
+.second-list a {
+    display: none;
+
+}
+
+.second-list li:nth-child(2) a, 
+.second-list li:nth-child(3) a {
+    display: none;
+}
+
+
+.footer-image {
+    display: none;
+   
+  }
+  
+  
+  .footer-image img {
+    display: none;
+    
+  }
+
+
+/* THE MUNU LAPTOP*/
+
+  .dropdown_menu {
+    display: table-column;
+    top: 45px;
+    width: 600px;
+
+  }
+
+  
+
+
+  
+    
+    
+    
+    .dropdown_menu.open{
+      height: 630px;
+    }
+    
+    .dropdown_menu li {
+      padding: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+
+    .dropdown-item a {
+      display: block;
+      padding: 8px 0px ;
+      background-color: #444;
+      color: white;
+     font-size: 18px;
+      text-decoration: underline;
+      width: 60%;
+      text-decoration: none;
+      
+    }
+  
+    .submenu li {
+     margin-top: -22px;
+     margin-bottom: -22px;
+     text-align: left;
+     
+    }
+  
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      color: white;
+      min-width: 150px;
+
+    }
+
+  
+
+    .dropdown-item:hover .submenu  {
+      display: contents;
+      text-align: center;
+    }
+  
+  
+    
+    
+  
+  }
+
+
+  
+  
+
+
+  
+  @media (min-width: 600px) {
+    #hero img {
+     height: 50vh;
+     width: 100%;
+    margin-top: 50px;
+    
+    }
+  
+  
+  header {
+    background-color: white;
+       margin-bottom: -40px; 
+  }
+
+  
+  
+}
+
+  
+    
+@media (max-width: 590px) {
+  
+  .traning-move img {
+    display: none;
+  }
+
+
+  
+
+}
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 576px) {
+  
+
+    /*application*/
+
+    .image-application img {
+      display: none;
+    }
+    
+
+  .dropdown_menu {
+    
+    left: -3rem;
+    width: 120%;
+
+
+  }
+
+  .language {
+    position: static;
+  }
+
+ 
+   
+    .language a {
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+        position: relative;
+        left: 190px;
+        font-size: 14px;
+        
+      }
+   
+  
+
+/*footer styles for latop for phone   */
+
+
+.laptop-class a {
+   display: none;
+  }
+
+
+  .laptop-section {
+    display: none;
+  }
+
+
+  .laptop-class {
+    display: none;
+  }
+   .clearfix {
+    clear: both;
+   }
+
+   .laptop-foot h1 {
+    display: none;
+   }
+
+
+
+
+
+   /* for the laptop ending fotter*/
+
+   .second-list-2 a {
+    display: none;
+}
+
+.second-list-2 li:nth-child(2) a, 
+.second-list-2 li:nth-child(3) a {
+    display: none;
+}
+
+.footer-below-2 {
+    display: none;
+}
+
+.second-list-2 ul {
+    display: none;
+}
+
+.footer-image-2 {
+    display: none;
+}
+
+.footer-image-2 img {
+    display: none;
+}
+
+
+
+
+
+
+
+
+  
+  .nav-bar ul {
+    display: none;
+  }
+  
+  /* mobile for up div */
+  .up {
+    float: left;
+     width: 20%;
+     margin-left: 12px;
+  }
+  .clearfix {
+    clear: both;
+  }
+  
+  .up a {
+    width: 10px;
+    padding: 5px 6px;
+    text-align: center;
+    
+  }
+
+  .up h4 {
+ margin-right: -60px;
+    
+    
+  }
+
+  
+  /*  hero image  */
+  
+  
+  #hero img {
+    height: 50vh;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  #hero p {
+    padding-bottom: 70px;
+   
+   }
+  
+  
+  
+  
+  .case {
+    flex: 1 1 100%; /* 1 column on small screens */
+  }
+  
+  
+  
+  .label-head input {
+    width: 150%;
+  
+  }
+  
+  
+  
+  .label-number input {
+    width: 150%;
+     
+  }
+  
+  
+
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+/*the features list laptop codes */
+      
+
+
+
+
+.formular-6 img {
+  display: none;
+}
+
+.feature-22 {
+  display: none;
+}
+
+  
+  }
+
